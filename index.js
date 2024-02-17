@@ -22,19 +22,6 @@ app.get("/", (req, res) => {
     });
 });
 
-// for(let number in art){
-//     app.get("/"+number, (req, res) => {
-//         fs.readFile('./articles.json', "utf8", (err, data) => {
-//             if(err){
-//                 console.log(`Error reading file from disk: ${err}`);
-//             }else{
-//                 const jsonData = JSON.parse(data);
-//                 res.render("yourBlog.ejs", {articleData: jsonData.articles[number]});
-//             }
-//         });
-//     });
-// }
-
 app.get("/yourBlog/:id", (req, res) => {
     const id = req.params.id;
     fs.readFile('./articles.json', "utf8", (err, data) => {

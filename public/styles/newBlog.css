@@ -3,13 +3,12 @@
 }
 
 body{
-    background-color: #282e3c !important;
+    background-color: #242424 !important;
     display: flex;
     flex-direction: column;
 }
 
 h1{
-    font-family: "Righteous", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: black !important;
@@ -17,14 +16,16 @@ h1{
     font-size: 3em;
 }
 
+.navbar h1{
+    font-family: "Righteous", sans-serif !important;
+}
+
 .post-container h1{
-    background-color: #988829;
+    background-color: #706BC6;
 }
 
 .navbar{
-    background-color: #fdff00 !important;
-    /* box-shadow: 0px 10px 10px #988829; */
-
+    background-color: #37337B !important;
 }
 
 .blog-container{
@@ -36,13 +37,18 @@ h1{
 .Newblog{
     width: auto;
     margin: 20px 10%;
-    background-color: #242424 !important;
+    background-color: #A6A4D6 !important;
     padding: 50px;
     border-radius: 15px;
 }
 
 .Newblog input{
     margin-bottom: 10px;
+    box-shadow: 5px 5px #37337B;
+}
+
+textarea{
+    box-shadow: 5px 5px #37337B;
 }
 
 #content{
@@ -55,13 +61,43 @@ h1{
 }
 
 label{
-    color: white;
+    color: #37337B;
 }
 
 #submit{
-    margin: 10px;
+    margin: 10px 10px 0px 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    box-shadow: 5px 5px #37337B;
 }
 
+#submit:hover{
+    background-color: #37337B;
+    box-shadow: 5px 5px #706BC6;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, p, label{
+    font-family: 'Poppins';
+    font-weight: 700 !important;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */
+    color: #242424 !important;
+}
+
+small {font-size: 0.750rem; /* 12px */}
 
 
 
@@ -84,7 +120,7 @@ main{
 footer{
     position: absolute;
     bottom: 0;
-    background-color: #fdff00;
+    background-color: #37337B;
     width: 100%;
 }
 

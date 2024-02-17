@@ -8,8 +8,11 @@ body{
     flex-direction: column;
 }
 
+.navbar h1{
+    font-family: "Righteous", sans-serif !important;
+}
+
 h1{
-    font-family: "Righteous", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: black !important;
@@ -18,12 +21,11 @@ h1{
 }
 
 .post-container h1{
-    background-color: #988829;
+    background-color: #706BC6;
 }
 
 .navbar{
-    background-color: #fdff00 !important;
-    /* box-shadow: 0px 10px 10px #988829; */
+    background-color: #37337B !important;
 
 }
 
@@ -36,11 +38,11 @@ h1{
 .blog-matter{
     width: 90%;
     margin: 20px 10%;
-    color: white;
-    background-color: #282e3c;
+    color: black;
+    background-color: #A6A4D6;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 30px 30px 50px 5px #282e3c7a;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.616), inset 0px 0px 40px 5px #37337B;
 }
 
 .blog-matter p{
@@ -49,7 +51,31 @@ h1{
     overflow-wrap: break-word;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
 
+h1, h2, h3, h4, h5, p{
+    font-family: 'Poppins';
+    font-weight: 700 !important;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */
+    color: #242424 !important;
+}
+
+small {font-size: 0.750rem; /* 12px */}
 
 
 
@@ -73,7 +99,7 @@ main{
 footer{
     position: absolute;
     bottom: 0;
-    background-color: #fdff00;
+    background-color: #37337B;
     width: 100%;
 }
 
