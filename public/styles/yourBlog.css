@@ -10,20 +10,24 @@ body{
     flex-direction: column;
 }
 
+@font-face{
+    font-family: 'After smile';
+    src: url("./AfterSmileRegular-K7M3y.otf");
+    font-weight: bold;
+}
+
 .navbar h1{
     font-family: "Righteous", sans-serif !important;
 }
 
-h1{
+.post-container h1{
+    background-color: #706BC6;
     font-weight: 400;
     font-style: normal;
     color: black !important;
     text-align: center;
     font-size: 3em;
-}
-
-.post-container h1{
-    background-color: #706BC6;
+    font-family: 'After smile';
 }
 
 .navbar{

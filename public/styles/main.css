@@ -4,7 +4,7 @@
 
 body{
     /* background-color:#242424 !important; */
-    background-image: url("./wavesLaptop.svg");
+    background-image: url("./AbhiDesign.svg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -38,20 +38,25 @@ body{
     align-items: baseline;
 }
 
+@font-face{
+    font-family: 'After smile';
+    src: url("./AfterSmileRegular-K7M3y.otf");
+    font-weight: bold;
+}
+
 .navbar h1{
     font-family: "Righteous", sans-serif !important;
 }
 
-h1{
+.post-container h1{
+    background-color: #706BC6;
+    font-family: 'After smile' !important;
     font-weight: 400;
     font-style: normal;
     color: black !important;
     text-align: center;
     font-size: 3em;
-}
-
-.post-container h1{
-    background-color: #706BC6;
+    font-weight: 900 !important;
 }
 
 .navbar{
@@ -124,26 +129,25 @@ body {
     font-weight: 400;
 }
 
-h1, h2, h3, h4, h5, p{
-    font-family: 'Poppins';
-    font-weight: 700 !important;
+h5{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto !important;
+    font-weight: 800 !important;
+    font-style: normal !important;
 }
 
-html {font-size: 100%;} /* 16px */
-
-h1 {font-size: 4.210rem; /* 67.36px */}
-
-h2 {font-size: 3.158rem; /* 50.56px */}
-
-h3 {font-size: 2.369rem; /* 37.92px */}
-
-h4 {font-size: 1.777rem; /* 28.48px */}
-
-h5 {font-size: 1.333rem; /* 21.28px */
-    color: #242424 !important;
+h6{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 663 !important;
+    font-style: normal;
 }
 
-small {font-size: 0.750rem; /* 12px */}
+p{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
 
 .option-box{
     display: flex;
