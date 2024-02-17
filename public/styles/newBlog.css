@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #282e3c !important;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black !important;
+    text-align: center;
+    font-size: 3em;
+}
+
+.post-container h1{
+    background-color: #988829;
+}
+
+.navbar{
+    background-color: #fdff00 !important;
+    /* box-shadow: 0px 10px 10px #988829; */
+
+}
+
+.blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Newblog{
+    width: auto;
+    margin: 20px 10%;
+    background-color: #242424 !important;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.Newblog input{
+    margin-bottom: 10px;
+}
+
+#content{
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 100px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+label{
+    color: white;
+}
+
+#submit{
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+    flex: 1;
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: #fdff00;
+    width: 100%;
+}
+
+
+footer p{
+    padding: 5px;
+    color: black;
+}
