@@ -9,20 +9,14 @@
         },
         {
             "id": 2,
-            "title": "JavaScript Basics",
-            "sub-title": "JS",
-            "sub-content": "Stuck doing JS then click here and look at some cheat codes which you may find useful.",
-            "content": "Curabitur vel neque vel dui facilisis ullamcorper. Integer at sapien in tortor tincidunt consectetur. Duis nec risus ut lectus malesuada convallis id vitae tellus. Nunc vel quam vitae risus tincidunt semper. Quisque sed ante id mauris tristique dictum. Proin gravida, mi eget posuere bibendum, dui mi commodo justo, vel feugiat lectus velit vel odio. Phasellus sed dapibus elit. Sed elementum, metus ac aliquet vestibulum, neque dolor fermentum justo, ut laoreet nisi urna et neque. Aenean tincidunt, enim id aliquam posuere, elit urna sollicitudin justo, a efficitur purus elit non ligula. Sed bibendum augue at arcu eleifend vestibulum. Integer semper ligula vel aliquet commodo. Curabitur tincidunt sapien vel elit vulputate, in consectetur arcu suscipit. In hac habitasse platea dictumst. Duis nec orci odio. Sed interdum purus ut efficitur sagittis. Ut vitae lectus sit amet nunc viverra tempus vel vel purus."
-        },
-        {
-            "id": 3,
             "title": "Cooking Tips for Beginners",
             "sub-title": "Master chef",
             "sub-content": "Cook like you favourite restaurant and never pay extra for the food you can make at your home.",
-            "content": "Vestibulum eu odio quis lacus ullamcorper varius non a tortor. Suspendisse bibendum elit eu justo facilisis, non suscipit felis gravida. Etiam volutpat, metus id feugiat aliquam, elit nunc fermentum nibh, nec tincidunt nunc metus vitae risus. Nunc hendrerit massa vitae fermentum efficitur. Fusce vehicula sapien euismod, malesuada urna sit amet, luctus mauris. Phasellus congue lacus non nisl tristique, et hendrerit elit feugiat. Suspendisse vel enim id nisi fermentum ultricies. Ut ac arcu ac lacus sollicitudin varius. Suspendisse potenti. Vestibulum congue pharetra mauris id tincidunt. Sed ut justo in leo venenatis fermentum et eget felis. Nulla facilisi. Nunc vulputate sodales leo id bibendum. Sed vel metus nec sapien sagittis dictum vel et elit. Proin ac libero id justo aliquet lacinia. Nullam hendrerit, ligula ac blandit scelerisque, leo nulla fermentum nisl, vel scelerisque dolor augue vel nunc. Quisque nec neque libero."
+            "content": "Vestibulum eu odio quis lacus ullamcorper varius non a tortor. Suspendisse bibendum elit eu justo facilisis, non suscipit felis gravida. Etiam volutpat, metus id feugiat aliquam, elit nunc fermentum nibh, nec tincidunt nunc metus vitae risus. Nunc hendrerit massa vitae fermentum efficitur. Fusce vehicula sapien euismod, malesuada urna sit amet, luctus mauris. Phasellus congue lacus non nisl tristique, et hendrerit elit feugiat. Suspendisse vel enim id nisi fermentum ultricies. Ut ac arcu ac lacus sollicitudin varius. Suspendisse potenti. Vestibulum congue pharetra mauris id tincidunt. Sed ut justo in leo venenatis fermentum et eget felis. Nulla facilisi. Nunc vulputate sodales leo id bibendum. Sed vel metus nec sapien sagittis dictum vel et elit. Proin ac libero id justo aliquet lacinia. Nullam hendrerit, ligula ac blandit scelerisque, leo nulla fermentum nisl, vel scelerisque dolor augue vel nunc. Quisque nec neque libero.\r\n            \r\n            ",
+            "subtitle": "Master chef"
         },
         {
-            "id": 4,
+            "id": 3,
             "title": "New adventures with Robin",
             "sub-title": "Robin took down the joker",
             "sub-content": "Joker for the first time fell for a booby trap set by Robin",

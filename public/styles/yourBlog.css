@@ -3,7 +3,9 @@
 }
 
 body{
-    background-color: #242424 !important;
+    background-image: url("./yourblog.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
 }

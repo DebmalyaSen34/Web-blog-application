@@ -3,7 +3,10 @@
 }
 
 body{
-    background-color:#242424 !important;
+    /* background-color:#242424 !important; */
+    background-image: url("./wavesLaptop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
 }
@@ -13,10 +16,11 @@ body{
     text-align: center;
     margin-bottom: 20px;
     background-color: #242424;
-    width: 100%;
+    width: 50%;
     padding: 10px;
     border-radius: 10px;
     text-decoration: none;
+    box-shadow: 5px 5px black;
 }
 
 .navbar a:hover{
@@ -70,7 +74,7 @@ h1{
     color: black !important;
     border-radius: 15px;
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.616), inset 0px 0px 40px 5px #37337B;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .card-body:hover{
@@ -107,7 +111,7 @@ input[type=submit]{
     border: none;
     border-radius: 10px;
     color: red;
-    
+    width: fit-content;
 }
 
 input[type=submit]:hover{
@@ -141,9 +145,30 @@ h5 {font-size: 1.333rem; /* 21.28px */
 
 small {font-size: 0.750rem; /* 12px */}
 
+.option-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    align-items: baseline;
+    column-gap: 40px;
+}
 
+.edit{
+    border-radius: 10px;
+    font-family: 'Poppins';
+    border: none;
+    padding: 5px;
+    flex: 2;
+    font-weight: 600 !important;
+    background-color: #37337B;
+    box-shadow: 5px 5px #242424;
+}
 
-
+.edit:hover{
+    background-color: darkblue;
+    color: white;
+}
 
 
 
