@@ -2,10 +2,22 @@ import express, { json } from 'express';
 import bodyParser from 'body-parser';
 import articles from './articles.json' assert {type: 'json'};
 import fs from 'fs';
+import pg from 'pg';
 
 const app = express();
 const port = 3000;
 const art = articles["articles"];
+
+const db = new pg.Client({
+    user: "postgres",
+    host: "localhost",
+    database: "Bat-Blog",
+    password: "Batman@2003",
+    port: 5432,
+});
+
+db.connect();
+
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -69,8 +81,6 @@ app.post("/update/:id", (req, res) => {
             something["sub-content"] = blogSummary;
             something.content = blogContent;
 
-            // console.log(blogContent);
-
             fs.writeFile('./articles.json', JSON.stringify(jsonData, null, 4), (err) => {
                 if(err){
                     console.log(`Error writing file to disk: ${err}`);
@@ -126,7 +136,6 @@ app.post("/del/:id", (req,res) => {
 
             if (index !== -1) {
                 jsonData.articles.splice(index, 1);
-
                 jsonData.articles = jsonData.articles.map((article, index) => {
                     return { ...article, id: index + 1 };
                 });
@@ -143,6 +152,20 @@ app.post("/del/:id", (req,res) => {
             }
         }
     });
+});
+
+app.get('/profile', (req, res) => {
+    res.render('profile.ejs');
+});
+
+app.post('/registerSelf', async (req, res) => {
+    console.log(req.body);
+    const fullName = req.body.fullName;
+    const username = req.body.username;
+    const password = req.body.password;
+
+    await db.query("INSERT INTO authors (full_name, username, password) VALUES ($1, $2, $3)", [fullName, username, password]);
+    res.redirect('/');
 });
 
 app.listen(port, () => {

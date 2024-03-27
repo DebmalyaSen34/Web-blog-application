@@ -174,7 +174,18 @@ p{
     color: white;
 }
 
+#batmanAvatar{
+    background-image: url('./batmanAvatar.svg');
+    background-size: cover;
+    width: 7vmin;
+    height: 7vmin;
+    transition: all ease-in-out .25s;
+}
 
+#batmanAvatar:hover{
+    background-image: url('./batmanAfterHover.svg');
+    background-size: cover;
+}
 
 
 
