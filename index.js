@@ -3,20 +3,31 @@ import bodyParser from 'body-parser';
 import articles from './articles.json' assert {type: 'json'};
 import fs from 'fs';
 import pg from 'pg';
+import 'dotenv/config';
 
 const app = express();
 const port = 3000;
 const art = articles["articles"];
 
+// console.log(process.env.DB_PASSWORD);
+
 const db = new pg.Client({
-    user: "postgres",
-    host: "localhost",
-    database: "Bat-Blog",
-    password: "Batman@2003",
-    port: 5432,
+    user: process.env.DB_USERNAME,
+    host: process.env.DB_HOST,
+    database: process.env.DB_DBNAME,
+    password: process.env.DB_PASSWORD,
+    port: process.env.DB_PORT,
 });
 
-db.connect();
+// const connectionString = "postgres://localhost:16lYxmNGNi9q9O2gytZjrlnVsjW1c40E@dpg-co241si0si5c73cqakgg-a/authors_cvb5";
+
+// const db = new pg.Client({
+//     connectionString,
+// });
+
+db.connect()
+    .then(() => console.log('Connected to PostgreSQL on Render'))
+    .catch(err => console.error('Connection error', err.stack));
 
 
 app.use(express.static("public"));
@@ -164,8 +175,9 @@ app.post('/registerSelf', async (req, res) => {
     const username = req.body.username;
     const password = req.body.password;
 
-    await db.query("INSERT INTO authors (full_name, username, password) VALUES ($1, $2, $3)", [fullName, username, password]);
+    await db.query("INSERT INTO usertable (full_name, user_name, password) VALUES ($1, $2, $3)", [fullName, username, password]);
     res.redirect('/');
+    db.end();
 });
 
 app.listen(port, () => {
